@@ -1,0 +1,173 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "app": "Smart App",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Smart Solutions – Comfortable Environment!",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "desc": "Modern eco-friendly solutions for nomadic lifestyle.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "contact": "Contact",
+    "address": "OFFICE 51, 4-TH KHOROO, CHINGELTEI DISTRICT, ULAANBAATAR CITY, MONGOLIA"
+  },
+  "Home": {
+    "engineeredTitle": "Engineered for Extremes",
+    "engineeredDesc": "Designed to withstand the harshest Mongolian climates, from -45°C to +45°C.",
+    "coldRes": "Cold Resistance",
+    "coldResDesc": "Superior insulation keeps you warm.",
+    "earthquakeRes": "Earthquake Resistant",
+    "earthquakeResDesc": "Flexible structure absorbs shocks.",
+    "windRes": "Wind Resistance",
+    "windResDesc": "Aerodynamic shape deflects wind.",
+    "lifespan": "Lifespan",
+    "lifespanDesc": "Durable FRP & XPS materials.",
+    "advantagesTitle": "Smart Eco Ger Advantages",
+    "advantagesDesc": "Experience the perfect blend of tradition and modern technology.",
+    "energyEff": "Energy Efficient",
+    "energyEffDesc": "Advanced FRP+XPS+FRP wall structure ensures minimal heat loss.",
+    "ecoFriendly": "Eco-Friendly",
+    "ecoFriendlyDesc": "Solar and wind energy integration ready. Green materials safe for health.",
+    "smartControl": "Smart Control",
+    "smartControlDesc": "Monitor and control your home environment from anywhere with our app.",
+    "appTitle": "Complete Control at Your Fingertips",
+    "appDesc": "Our proprietary Smart App integrates seamlessly with your Ger's systems. Monitor temperature, humidity, air quality, and energy usage in real-time.",
+    "remoteHeating": "Remote Heating Control",
+    "energyMon": "Energy Consumption Monitoring",
+    "airQuality": "Air Quality Alerts",
+    "discoverApp": "Discover the App"
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Innovating Tradition for a Sustainable Future",
+    "missionTitle": "Our Mission",
+    "missionDesc": "\"SMART ECO GER\" is a new generation solution combining modern technology, eco-materials, and smart control for comfortable living in all 4 seasons. We aim to solve pressing issues like air pollution and energy efficiency while preserving the rich heritage of the Mongolian Ger.",
+    "teamTitle": "Our Team"
+  },
+  "SmartEcoGerSection": {
+    "title": "\"SMART ECO GER\"",
+    "desc1": "NOT JUST A DWELLING – IT IS A NEW GENERATION GER THAT COMBINES TRADITIONAL CULTURE WITH MODERN SMART TECHNOLOGY, IS ECO-FRIENDLY, AND ENERGY EFFICIENT.",
+    "desc2": "DESIGNED FOR MONGOLIA'S EXTREME CLIMATE, IT PROVIDES COMFORTABLE LIVING OPPORTUNITIES IN ALL 4 SEASONS.",
+    "desc3": "THIS SOLUTION INTEGRATING INNOVATION AND TRADITION IS THE NEXT EVOLUTION OF THE MONGOLIAN GER.",
+    "tagline": "\"SMART SOLUTIONS - COMFORTABLE ENVIRONMENT!\""
+  },
+  "SmartEcoGerDetails": {
+    "intro": {
+      "title": "General Introduction",
+      "desc": "\"SMART ECO GER\" is a new generation Mongolian Ger designed for extreme climates. It combines modern technology, eco-materials, and smart control to provide a comfortable, energy-efficient living solution for all 4 seasons."
+    },
+    "specs": {
+      "title": "Main Technical Specifications",
+      "area": "Area: 28 m² (Diameter ~6.2 m)",
+      "height": "Total Height: 3.0 – 3.5 m",
+      "wall": "Wall: FRP (5mm) + XPS (9cm) + FRP (5mm) = Total 10cm",
+      "toono": "Toono: 10mm Polycarbonate (200x stronger than glass, UV protected, smart ventilation installed)",
+      "floor": "Floor: WB Board (Water/moisture resistant, double-sided pest protection)",
+      "assembly": "Assembly: 3-4 people in 3-4 hours (Modular design)"
+    },
+    "materials": {
+      "title": "Material Features",
+      "frpTitle": "FRP (Fiberglass Reinforced Plastic)",
+      "frpDesc": "Strong, rust-free, wear-resistant, non-toxic, and durable.",
+      "xpsTitle": "XPS (Extruded Polystyrene)",
+      "xpsDesc": "Low heat conductivity, moisture resistant, retains shape. 5-6 times warmer than brick walls."
+    },
+    "features": {
+      "title": "Key Advantages",
+      "climate": "Designed for Mongolia's Extreme Climate (-45°C to +45°C)",
+      "earthquake": "Earthquake Resistant (Flexible structure, low inertia, withstands 7-8 magnitude, up to 9-10)",
+      "wind": "Wind Resistance (Aerodynamic round shape, withstands 20-30 m/s winds)",
+      "snow": "Snow Load Capacity (Safe for 70-100cm snow depth)",
+      "ventilation": "Smart Ventilation System (Fresh air intake with PM2.5 filter, solar-powered exhaust fan)"
+    },
+    "smartSystem": {
+      "title": "Smart System & Energy",
+      "iot": "IoT System: Control lighting, heating, and ventilation from your phone (works offline via local network).",
+      "sensors": "Safety Sensors: Smoke, CO, temperature, and door/window sensors.",
+      "energy": "Renewable Energy Ready: Compatible with Solar (1.5-2kW) + Wind (1kW) + Lithium Battery storage."
+    },
+    "applications": {
+      "title": "Applications",
+      "list": "Resort/Tourist Camps, Temporary Housing/Office, Mining Camps, Herder/Agriculture (Off-grid ready)."
+    }
+  },
+  "Products": {
+    "title": "Products",
+    "subtitle": "Smart Housing & Renewable Energy Solutions",
+    "smartGerTitle": "SMART ECO GER",
+    "smartGerDesc": "The ultimate modern nomad home. Fully insulated, energy-efficient, and connected.",
+    "specsTitle": "Technical Specifications:",
+    "area": "Area: 28 m² (Diameter ~6.2 m)",
+    "height": "Height: 3.0 – 3.5 m",
+    "walls": "Walls: FRP (5mm) + XPS (9cm) + FRP (5mm) = 10cm",
+    "toono": "Toono: 10mm Polycarbonate (200x stronger than glass)",
+    "floor": "Floor: WB board (Water/Moisture resistant)",
+    "assembly": "Assembly: 3-4 people in 3-4 hours",
+    "viewSpecs": "View Specs",
+    "downloadBrochure": "Download Brochure (PDF)",
+    "otherSolutions": "Other Solutions",
+    "solarWindTitle": "Solar-Wind Hybrid System",
+    "solarWindDesc": "Complete off-grid energy solution designed for Gers. Solar panels, wind turbine, and battery storage.",
+    "smartHeaterTitle": "Smart Electric Heater",
+    "smartHeaterDesc": "IoT-enabled heating unit that learns your schedule and optimizes energy usage.",
+    "airPurifierTitle": "Ger Air Purifier",
+    "airPurifierDesc": "High-capacity HEPA filtration system to ensure clean air inside your home."
+  },
+  "App": {
+    "title": "Smart App",
+    "subtitle": "Control Your Ger from Anywhere",
+    "keyFeatures": "Key Features",
+    "smartControl": "Smart Control",
+    "smartControlDesc": "Adjust heating, ventilation, and lighting remotely.",
+    "energyMon": "Energy Monitoring",
+    "energyMonDesc": "Track real-time power usage and optimize efficiency.",
+    "offlineMode": "Offline Mode",
+    "offlineModeDesc": "Bluetooth capability ensures local control even without internet."
+  },
+  "News": {
+    "title": "News",
+    "subtitle": "Latest Updates & Stories",
+    "readMore": "Read More",
+    "techTitle": "Introducing Smart Eco Ger 2.0",
+    "techDesc": "We are excited to announce the launch of our newest model, featuring enhanced insulation and AI-driven climate control.",
+    "sustTitle": "Partnering for a Greener Future",
+    "sustDesc": "Smart Eco Ger joins forces with local environmental NGOs to promote sustainable living practices in the Ger districts.",
+    "custTitle": "Living Smart: Battulga's Story",
+    "custDesc": "\"Since switching to Smart Eco Ger, our heating costs have dropped by 40% and the air quality is noticeably better.\""
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch with Our Team",
+    "infoTitle": "Contact Information",
+    "formTitle": "Send us a Message",
+    "name": "Full Name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "addressHeading": "Address",
+    "addressContent": "OFFICE 51, 4-TH KHOROO, CHINGELTEI DISTRICT, ULAANBAATAR CITY, MONGOLIA",
+    "phoneHeading": "Phone",
+    "emailHeading": "Email",
+    "hoursHeading": "Business Hours",
+    "weekdays": "Monday - Friday:",
+    "weekdaysHours": "9:00 AM - 6:00 PM",
+    "saturday": "Saturday:",
+    "saturdayHours": "10:00 AM - 4:00 PM",
+    "sunday": "Sunday:",
+    "closed": "Closed",
+    "findUs": "Find Us",
+    "getDirections": "Get Directions",
+    "callNow": "Call Now"
+  }
+}

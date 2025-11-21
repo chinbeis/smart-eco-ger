@@ -1,0 +1,163 @@
+{
+  "Navbar": {
+    "home": "主页",
+    "about": "关于我们",
+    "products": "产品",
+    "app": "智能应用",
+    "news": "新闻",
+    "contact": "联系我们"
+  },
+  "Hero": {
+    "title": "智能解决方案 – 舒适环境！",
+    "products": "产品",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "Footer": {
+    "rights": "版权所有。",
+    "desc": "专为游牧生活方式打造的现代环保解决方案。",
+    "quickLinks": "快速链接",
+    "followUs": "关注我们",
+    "contact": "联系方式",
+    "address": "蒙古国，乌兰巴托市，青格泰区，第4霍罗，51号办公室"
+  },
+  "Home": {
+    "engineeredTitle": "专为极端环境设计",
+    "engineeredDesc": "专为抵御蒙古最恶劣的气候而设计，从-45°C到+45°C。",
+    "coldRes": "耐寒性",
+    "coldResDesc": "卓越的隔热性能让您保持温暖。",
+    "earthquakeRes": "抗震",
+    "earthquakeResDesc": "柔性结构吸收冲击。",
+    "windRes": "抗风",
+    "windResDesc": "空气动力学形状偏转风力。",
+    "lifespan": "使用寿命",
+    "lifespanDesc": "耐用的FRP和XPS材料。",
+    "advantagesTitle": "智能蒙古包优势",
+    "advantagesDesc": "体验传统与现代科技的完美融合。",
+    "energyEff": "节能",
+    "energyEffDesc": "先进的FRP+XPS+FRP墙体结构确保最小热量损失。",
+    "ecoFriendly": "环保",
+    "ecoFriendlyDesc": "太阳能和风能集成就绪。绿色材料安全健康。",
+    "smartControl": "智能控制",
+    "smartControlDesc": "通过我们的应用程序随时随地监控和控制您的家庭环境。",
+    "appTitle": "掌控在指尖",
+    "appDesc": "我们专有的智能应用程序与您的蒙古包系统无缝集成。实时监控温度、湿度、空气质量和能源使用情况。",
+    "remoteHeating": "远程供暖控制",
+    "energyMon": "能耗监控",
+    "airQuality": "空气质量警报",
+    "discoverApp": "探索应用"
+  },
+    "About": {
+  "title": "关于我们",
+  "subtitle": "以创新传承传统，打造可持续的未来",
+  "missionTitle": "我们的使命",
+  "missionDesc": "“SMART ECO GER”是一项融合现代科技、生态材料与智能控制的新一代解决方案，为四季居住提供舒适体验。我们致力于在保留蒙古传统蒙古包文化精髓的同时，解决空气污染、能源效率等关键问题。",
+  "teamTitle": "我们的团队"
+},
+  "SmartEcoGerSection": {
+    "title": "“智能生态蒙古包”",
+    "desc1": "不仅仅是住所——它是将传统文化与现代智能科技相结合、环保且节能的新一代蒙古包。",
+    "desc2": "专为蒙古极端气候设计，提供一年四季舒适的生活环境。",
+    "desc3": "这一融合创新与传统的解决方案是蒙古包的下一次进化。",
+    "tagline": "“智能解决方案 - 舒适环境！”"
+  },
+  "SmartEcoGerDetails": {
+    "intro": {
+      "title": "总体介绍",
+      "desc": "“智能生态蒙古包”是专为极端气候设计的新一代蒙古包。它结合了现代技术、环保材料和智能控制，为一年四季提供舒适、节能的居住方案。"
+    },
+    "specs": {
+      "title": "主要技术规格",
+      "area": "面积：28平方米（直径约6.2米）",
+      "height": "总高度：3.0 – 3.5米",
+      "wall": "墙体：FRP（5毫米）+ XPS（9厘米）+ FRP（5毫米）= 总厚度10厘米",
+      "toono": "套脑（天窗）：10毫米聚碳酸酯（强度是玻璃的200倍，防紫外线，安装有智能通风系统）",
+      "floor": "地板：WB板（防水防潮，双面防虫保护）",
+      "assembly": "组装：3-4人，3-4小时（模块化设计）"
+    },
+    "materials": {
+      "title": "材料特性",
+      "frpTitle": "FRP（玻璃纤维增强塑料）",
+      "frpDesc": "坚固、防锈、耐磨、无毒且耐用。",
+      "xpsTitle": "XPS（挤塑聚苯乙烯）",
+      "xpsDesc": "低导热性，防潮，不变形。保暖性是砖墙的5-6倍。"
+    },
+    "features": {
+      "title": "主要优势",
+      "climate": "专为蒙古极端气候设计（-45°C至+45°C）",
+      "earthquake": "抗震（柔性结构，低惯性，抗7-8级地震，最高可抗9-10级）",
+      "wind": "抗风（空气动力学圆形设计，抗20-30米/秒强风）",
+      "snow": "雪载能力（可安全承受70-100厘米积雪）",
+      "ventilation": "智能通风系统（带PM2.5过滤的新风进气，太阳能排风扇）"
+    },
+
+    "smartSystem": {
+      "title": "智能系统与能源",
+      "iot": "物联网系统：通过手机控制照明、供暖和通风（支持本地网络离线工作）。",
+      "sensors": "安全传感器：烟雾、一氧化碳、温度和门窗传感器。",
+      "energy": "可再生能源就绪：兼容太阳能（1.5-2kW）+ 风能（1kW）+ 锂电池存储。"
+    },
+    "applications": {
+      "title": "应用领域",
+      "list": "度假村/旅游营地、临时住房/办公室、矿区营地、牧民/农业（离网就绪）。"
+    }
+  },
+    "Products": {
+  "title": "产品",
+  "subtitle": "智能住宅与可再生能源解决方案",
+  "smartGerTitle": "SMART ECO GER",
+  "smartGerDesc": "终极现代游牧家园。全面隔热、节能，并可联网。",
+  "specsTitle": "技术规格：",
+  "area": "面积：28 平方米（直径约 6.2 米）",
+  "height": "高度：3.0 – 3.5 米",
+  "walls": "墙体：FRP（5mm）+ XPS（9cm）+ FRP（5mm）= 10cm",
+  "toono": "顶部圆顶（Toono）：10mm 聚碳酸酯（强度为玻璃的200倍）",
+  "floor": "地板：WB 板（防水/防潮）",
+  "assembly": "组装：3-4 人，3-4 小时完成",
+  "viewSpecs": "查看规格",
+  "downloadBrochure": "下载宣传册（PDF）",
+  "otherSolutions": "其他解决方案",
+  "solarWindTitle": "太阳能-风能混合系统",
+  "solarWindDesc": "为蒙古包设计的完整离网能源解决方案。包含太阳能板、风力涡轮机和电池存储。",
+  "smartHeaterTitle": "智能电暖器",
+  "smartHeaterDesc": "支持物联网的加热设备，可学习您的作息并优化能耗。",
+  "airPurifierTitle": "蒙古包空气净化器",
+  "airPurifierDesc": "大容量 HEPA 过滤系统，确保室内空气清洁。"
+},
+  "News": {
+  "title": "新闻",
+  "subtitle": "最新动态与故事",
+  "readMore": "阅读全文",
+  "techTitle": "推出 Smart Eco Ger 2.0",
+  "techDesc": "我们很高兴地宣布推出全新型号，具有增强隔热和 AI 驱动的气候控制功能。",
+  "sustTitle": "携手共创绿色未来",
+  "sustDesc": "Smart Eco Ger 与本地环保 NGO 合作，推广蒙古包区的可持续生活方式。",
+  "custTitle": "智能生活：Battulga 的故事",
+  "custDesc": "“自从使用 Smart Eco Ger 后，我们的取暖费用降低了 40%，空气质量也明显改善。”"
+},
+  "Contact": {
+    "title": "联系我们",
+    "subtitle": "与我们团队取得联系",
+    "infoTitle": "联系方式",
+    "formTitle": "给我们留言",
+    "name": "全名",
+    "email": "电子邮件",
+    "subject": "主题",
+    "message": "留言内容",
+    "send": "发送留言",
+    "addressHeading": "地址",
+    "addressContent": "蒙古国，乌兰巴托市，青格泰区，第4霍罗，51号办公室",
+    "phoneHeading": "电话",
+    "emailHeading": "电子邮件",
+    "hoursHeading": "营业时间",
+    "weekdays": "周一至周五：",
+    "weekdaysHours": "9:00 - 18:00",
+    "saturday": "周六：",
+    "saturdayHours": "10:00 - 16:00",
+    "sunday": "周日：",
+    "closed": "休息",
+    "findUs": "找到我们",
+    "getDirections": "获取路线",
+    "callNow": "立即拨打"
+  }
+}
