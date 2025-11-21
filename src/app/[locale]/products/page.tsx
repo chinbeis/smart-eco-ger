@@ -133,21 +133,21 @@ export default function ProductsPage() {
             {/* 3. Structure Section - Three Cards */}
             <div className="relative">
               {/* Mobile: Horizontal Scroll */}
-              <div className="sm:hidden overflow-x-auto scrollbar-hide -mx-4 px-4">
-                <div className="flex gap-4 pb-4">
+              <div className="sm:hidden -mx-4">
+                <div className="flex overflow-x-auto gap-4 px-4 pb-4 snap-x snap-mandatory scrollbar-hide">
                   {[
                     { key: 'card1', image: '/product/structure/struc1.PNG', alt: 'Wall Structure' },
                     { key: 'card2', image: '/product/structure/struc2.PNG', alt: 'Energy Saving' },
                     { key: 'card3', image: '/product/structure/struc3.PNG', alt: 'Fast Construction' }
                   ].map((item) => (
-                    <div key={item.key} className="flex flex-col min-w-[85vw] flex-shrink-0">
+                    <div key={item.key} className="flex flex-col w-[280px] flex-shrink-0 snap-center">
                       <div className="relative h-48 w-full rounded-t-2xl overflow-hidden bg-white p-4 flex items-center justify-center">
                         <Image
                           src={item.image}
                           alt={item.alt}
                           fill
                           className="object-contain"
-                          sizes="85vw"
+                          sizes="280px"
                         />
                       </div>
                       <div className="bg-[#c49b3c] text-white p-6 rounded-b-2xl flex-1">
@@ -192,21 +192,21 @@ export default function ProductsPage() {
             {/* 4. Energy Efficiency Section - Three Cards */}
             <div className="relative">
               {/* Mobile: Horizontal Scroll */}
-              <div className="sm:hidden overflow-x-auto scrollbar-hide -mx-4 px-4">
-                <div className="flex gap-4 pb-4">
+              <div className="sm:hidden -mx-4">
+                <div className="flex overflow-x-auto gap-4 px-4 pb-4 snap-x snap-mandatory scrollbar-hide">
                   {[
                     { key: 'card1', image: '/product/energy/energy1.PNG', alt: 'Strong Wind Resistance' },
                     { key: 'card2', image: '/product/energy/energy2.PNG', alt: 'Smart Ventilation System' },
                     { key: 'card3', image: '/product/energy/energy3.PNG', alt: 'Snow Load Capacity' }
                   ].map((item) => (
-                    <div key={item.key} className="flex flex-col min-w-[85vw] flex-shrink-0">
+                    <div key={item.key} className="flex flex-col w-[280px] flex-shrink-0 snap-center">
                       <div className="relative h-48 w-full rounded-t-2xl overflow-hidden">
                         <Image
                           src={item.image}
                           alt={item.alt}
                           fill
                           className="object-cover"
-                          sizes="85vw"
+                          sizes="280px"
                         />
                       </div>
                       <div className="bg-[#0a2351] text-white p-6 rounded-b-2xl flex-1">
