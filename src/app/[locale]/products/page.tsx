@@ -3,8 +3,8 @@
 import {useTranslations} from 'next-intl';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
-import ProductCard from '../../../components/ProductCard';
 import Image from 'next/image';
+// import ProductCard from '../../../components/ProductCard';
 
 export default function ProductsPage() {
   const t = useTranslations('Products');
@@ -130,6 +130,124 @@ export default function ProductsPage() {
               </div>
             </div>
 
+            {/* 3. Structure Section - Three Cards */}
+            <div className="relative">
+              {/* Mobile: Horizontal Scroll */}
+              <div className="sm:hidden overflow-x-auto scrollbar-hide -mx-4 px-4">
+                <div className="flex gap-4 pb-4">
+                  {[
+                    { key: 'card1', image: '/product/structure/struc1.PNG', alt: 'Wall Structure' },
+                    { key: 'card2', image: '/product/structure/struc2.PNG', alt: 'Energy Saving' },
+                    { key: 'card3', image: '/product/structure/struc3.PNG', alt: 'Fast Construction' }
+                  ].map((item) => (
+                    <div key={item.key} className="flex flex-col min-w-[85vw] flex-shrink-0">
+                      <div className="relative h-48 w-full rounded-t-2xl overflow-hidden bg-white p-4 flex items-center justify-center">
+                        <Image
+                          src={item.image}
+                          alt={item.alt}
+                          fill
+                          className="object-contain"
+                          sizes="85vw"
+                        />
+                      </div>
+                      <div className="bg-[#c49b3c] text-white p-6 rounded-b-2xl flex-1">
+                        <h4 className="text-lg font-bold mb-4">{tDetails(`structureCards.${item.key}.title`)}</h4>
+                        <p className="text-sm leading-relaxed whitespace-pre-line">
+                          {tDetails(`structureCards.${item.key}.desc`)}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tablet and Desktop: Grid Layout */}
+              <div className="hidden sm:grid sm:grid-cols-3 gap-4 md:gap-6">
+                {[
+                  { key: 'card1', image: '/product/structure/struc1.PNG', alt: 'Wall Structure' },
+                  { key: 'card2', image: '/product/structure/struc2.PNG', alt: 'Energy Saving' },
+                  { key: 'card3', image: '/product/structure/struc3.PNG', alt: 'Fast Construction' }
+                ].map((item) => (
+                  <div key={item.key} className="flex flex-col">
+                    <div className="relative h-56 md:h-64 w-full rounded-t-2xl overflow-hidden bg-white p-4 flex items-center justify-center">
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 1024px) 33vw, 33vw"
+                      />
+                    </div>
+                    <div className="bg-[#c49b3c] text-white p-6 rounded-b-2xl flex-1">
+                      <h4 className="text-lg md:text-xl font-bold mb-4">{tDetails(`structureCards.${item.key}.title`)}</h4>
+                      <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+                        {tDetails(`structureCards.${item.key}.desc`)}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 4. Energy Efficiency Section - Three Cards */}
+            <div className="relative">
+              {/* Mobile: Horizontal Scroll */}
+              <div className="sm:hidden overflow-x-auto scrollbar-hide -mx-4 px-4">
+                <div className="flex gap-4 pb-4">
+                  {[
+                    { key: 'card1', image: '/product/energy/energy1.PNG', alt: 'Strong Wind Resistance' },
+                    { key: 'card2', image: '/product/energy/energy2.PNG', alt: 'Smart Ventilation System' },
+                    { key: 'card3', image: '/product/energy/energy3.PNG', alt: 'Snow Load Capacity' }
+                  ].map((item) => (
+                    <div key={item.key} className="flex flex-col min-w-[85vw] flex-shrink-0">
+                      <div className="relative h-48 w-full rounded-t-2xl overflow-hidden">
+                        <Image
+                          src={item.image}
+                          alt={item.alt}
+                          fill
+                          className="object-cover"
+                          sizes="85vw"
+                        />
+                      </div>
+                      <div className="bg-[#0a2351] text-white p-6 rounded-b-2xl flex-1">
+                        <h4 className="text-lg font-bold mb-4">{tDetails(`energyCards.${item.key}.title`)}</h4>
+                        <p className="text-sm leading-relaxed whitespace-pre-line">
+                          {tDetails(`energyCards.${item.key}.desc`)}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tablet and Desktop: Grid Layout */}
+              <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                {[
+                  { key: 'card1', image: '/product/energy/energy1.PNG', alt: 'Strong Wind Resistance' },
+                  { key: 'card2', image: '/product/energy/energy2.PNG', alt: 'Smart Ventilation System' },
+                  { key: 'card3', image: '/product/energy/energy3.PNG', alt: 'Snow Load Capacity' }
+                ].map((item, index) => (
+                  <div key={item.key} className={`flex flex-col ${index === 2 ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
+                    <div className="relative h-56 md:h-64 w-full rounded-t-2xl overflow-hidden">
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 50vw, 33vw"
+                      />
+                    </div>
+                    <div className="bg-[#0a2351] text-white p-6 rounded-b-2xl flex-1">
+                      <h4 className="text-lg md:text-xl font-bold mb-4">{tDetails(`energyCards.${item.key}.title`)}</h4>
+                      <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+                        {tDetails(`energyCards.${item.key}.desc`)}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* 3. Smart System & Energy */}
             <div className="bg-gradient-to-br from-gray-900 via-blue-900 to-slate-900 rounded-3xl p-6 md:p-10 lg:p-12 text-white shadow-2xl">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -139,21 +257,21 @@ export default function ProductsPage() {
                     <li className="flex items-start bg-white/5 p-4 rounded-xl hover:bg-white/10 transition-colors">
                       <span className="text-2xl md:text-3xl mr-4 flex-shrink-0">📱</span>
                       <div>
-                        <p className="font-semibold text-base md:text-lg mb-1">IoT System</p>
+                        <p className="font-semibold text-base md:text-lg mb-1">{tDetails('smartSystem.iotTitle')}</p>
                         <p className="text-gray-300 text-sm md:text-base">{tDetails('smartSystem.iot')}</p>
                       </div>
                     </li>
                     <li className="flex items-start bg-white/5 p-4 rounded-xl hover:bg-white/10 transition-colors">
                       <span className="text-2xl md:text-3xl mr-4 flex-shrink-0">🛡️</span>
                       <div>
-                        <p className="font-semibold text-base md:text-lg mb-1">Safety Sensors</p>
+                        <p className="font-semibold text-base md:text-lg mb-1">{tDetails('smartSystem.sensorsTitle')}</p>
                         <p className="text-gray-300 text-sm md:text-base">{tDetails('smartSystem.sensors')}</p>
                       </div>
                     </li>
                     <li className="flex items-start bg-white/5 p-4 rounded-xl hover:bg-white/10 transition-colors">
                       <span className="text-2xl md:text-3xl mr-4 flex-shrink-0">⚡</span>
                       <div>
-                        <p className="font-semibold text-base md:text-lg mb-1">Renewable Energy</p>
+                        <p className="font-semibold text-base md:text-lg mb-1">{tDetails('smartSystem.energyTitle')}</p>
                         <p className="text-gray-300 text-sm md:text-base">{tDetails('smartSystem.energy')}</p>
                       </div>
                     </li>
@@ -178,6 +296,25 @@ export default function ProductsPage() {
               <p className="text-base md:text-lg text-gray-700 font-medium">{tDetails('applications.list')}</p>
             </div>
             
+            {/* Video Player Section */}
+            <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-6 md:p-10 border-2 border-gray-200 shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-[var(--brand-navy)] mb-6 text-center">
+                {tDetails('videoSection.title')}
+              </h3>
+              <div className="max-w-5xl mx-auto">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-[var(--brand-gold)]">
+                  <video 
+                    className="w-full h-auto"
+                    controls
+                    poster="/product/442c4846-f77e-462c-9d18-1f5e7ecc9328.jpg"
+                  >
+                    <source src="/video/ger.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+
             {/* Download Button */}
             <div className="flex justify-center gap-4 pt-4">
               <button 
@@ -191,35 +328,8 @@ export default function ProductsPage() {
               </button>
             </div>
           </div>
-
-          {/* Product Grid */}
-          <h2 className="text-2xl md:text-3xl font-bold text-[var(--brand-navy)] mb-8 md:mb-12 text-center">{t('otherSolutions')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20">
-            <ProductCard
-              id="solar-wind"
-              title={t('solarWindTitle')}
-              description={t('solarWindDesc')}
-              imageUrl="/product/df5cb723-9328-44a7-b961-7e5e5790789c.jpg"
-              link="/products/solar-wind"
-            />
-            <ProductCard
-              id="smart-heater"
-              title={t('smartHeaterTitle')}
-              description={t('smartHeaterDesc')}
-              imageUrl="/product/7f9aaaec-340f-4760-8af3-bbea308f2c0a.jpg"
-              link="/products/smart-heater"
-            />
-            <ProductCard
-              id="air-purifier"
-              title={t('airPurifierTitle')}
-              description={t('airPurifierDesc')}
-              imageUrl="/product/032be539-54b8-4b7b-9921-56a66d9ed1d3.jpg"
-              link="/products/air-purifier"
-            />
-          </div>
         </div>
       </section>
-
       <Footer />
     </main>
   );

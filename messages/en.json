@@ -8,7 +8,7 @@
     "contact": "Contact"
   },
   "Hero": {
-    "title": "Smart Solutions – Comfortable Environment!",
+    "title": "BE SMART, LIVE COMFORTABLE",
     "products": "Products",
     "about": "About Us",
     "contact": "Contact Us"
@@ -68,7 +68,7 @@
     },
     "specs": {
       "title": "Main Technical Specifications",
-      "area": "Area: 28 m² (Diameter ~6.2 m)",
+      "area": "Area: 2 sizes: 1. 28m² (6.2m diameter), 2. 45m² (8.2m diameter)",
       "height": "Total Height: 3.0 – 3.5 m",
       "wall": "Wall: FRP (5mm) + XPS (9cm) + FRP (5mm) = Total 10cm",
       "toono": "Toono: 10mm Polycarbonate (200x stronger than glass, UV protected, smart ventilation installed)",
@@ -92,13 +92,47 @@
     },
     "smartSystem": {
       "title": "Smart System & Energy",
-      "iot": "IoT System: Control lighting, heating, and ventilation from your phone (works offline via local network).",
-      "sensors": "Safety Sensors: Smoke, CO, temperature, and door/window sensors.",
-      "energy": "Renewable Energy Ready: Compatible with Solar (1.5-2kW) + Wind (1kW) + Lithium Battery storage."
+      "iotTitle": "IoT System",
+      "iot": "Control lighting, heating, and ventilation from your phone (works offline via local network).",
+      "sensorsTitle": "Safety Sensors",
+      "sensors": "Smoke, CO, temperature, and door/window sensors.",
+      "energyTitle": "Renewable Energy Ready",
+      "energy": "Compatible with Solar (1.5-2kW) + Wind (1kW) + Lithium Battery storage."
+    },
+    "videoSection": {
+      "title": "Product Showcase Video"
     },
     "applications": {
       "title": "Applications",
       "list": "Resort/Tourist Camps, Temporary Housing/Office, Mining Camps, Herder/Agriculture (Off-grid ready)."
+    },
+    "structureCards": {
+      "card1": {
+        "title": "Wall Structure",
+        "desc": "Our ger wall: /FRP+XPS+FRP/ 5mm FRP panels on both sides, 9cm XPS foam insulation in the middle, total 10cm thickness.\nFRP – Resists shock and mechanical impact well, but requires good foundation anchorage in very strong winds.\nXPS Foam – Low heat loss, lightweight material, sufficient to support snow weight."
+      },
+      "card2": {
+        "title": "Energy Saving Construction",
+        "desc": "• High thermal insulation, resistant from +45°C to -45°C\n• Lifespan: 50+ years\n• Electricity: Simple connection, can also be connected to solar + wind sources and smart controls\n• Usage: Suitable for Mongolia's extreme climate, tourism, and year-round use."
+      },
+      "card3": {
+        "title": "Fast Construction",
+        "desc": "\"Smart Eco Ger\" is built by assembling parts. Design: Traditional Mongolian ger design.\n• Lifespan: 50+ years\n• Portability: Modular, so 3-4 people can disassemble and assemble it by hand within 3-4 hours.\n• Electricity: Simple connection, can also be connected to solar + wind sources and smart controls."
+      }
+    },
+    "energyCards": {
+      "card1": {
+        "title": "Strong Wind Resistance",
+        "desc": "The optimal shape of the \"Smart Eco Ger\" protects it from direct wind. The FRP wall surface is resistant to sand and dirt and does not crack.\nGood sealing of the roof, door, and windows prevents dust from entering the interior. Resistant to winds of 20-30m/s."
+      },
+      "card2": {
+        "title": "Smart Ventilation System",
+        "desc": "1. Fresh air intake /skirting/ admits fresh, filtered air (with PM2.5 filter) from outside.\n2. Solar-powered exhaust fan /mounted on toono/ expels hot, polluted air, humidity, and stale air through the toono.\nResult: Indoor air is constantly renewed. Protects against overheating in summer, prevents condensation and moisture in winter. Creates a healthy, comfortable environment."
+      },
+      "card3": {
+        "title": "Snow Load Capacity",
+        "desc": "A 6m diameter ger can safely support an average of 70-100 cm of snow. If more snow falls, the roof needs to be shaken to clean it.\nAlso, our ger walls are slippery, so snow is less likely to stick.\nXPS Foam – Low heat loss, lightweight material, sufficient to support snow weight."
+      }
     }
   },
   "Products": {

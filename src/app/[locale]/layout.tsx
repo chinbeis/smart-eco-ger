@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Smart Eco Ger - Ухаалаг шийдэл",
+  title: "УХААЛАГ ШИЙДЭЛ, ТАВ ТУХТАЙ ОРЧИН",
   description: "Smart Solutions – Comfortable Environment!",
 };
 

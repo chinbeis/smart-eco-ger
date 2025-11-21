@@ -42,7 +42,7 @@ export default function HomePage() {
             <div className="group p-6 md:p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[var(--brand-gold)]/30 hover:-translate-y-2">
               <div className="text-center">
                 <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--brand-gold)] mb-3 group-hover:scale-110 transition-transform duration-300">
-                  8 Mag
+                  8-10 Mag
                 </h3>
                 <p className="text-gray-800 font-semibold text-lg mb-2">{t('earthquakeRes')}</p>
                 <p className="text-sm md:text-base text-gray-500 leading-relaxed">{t('earthquakeResDesc')}</p>
