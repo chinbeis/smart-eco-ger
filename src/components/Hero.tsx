@@ -1,21 +1,48 @@
+"use client"
+
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/routing';
 import Image from 'next/image';
+import {useState, useEffect} from 'react';
 
 export default function Hero() {
   const t = useTranslations('Hero');
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = [
+    '/product/df5cb723-9328-44a7-b961-7e5e5790789c.jpg',
+    '/images/15.jpg',
+    '/images/11.jpg'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <div className="relative h-screen min-h-[600px] w-full overflow-hidden">
-      {/* Background Image */}
+      {/* Background Images */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/product/df5cb723-9328-44a7-b961-7e5e5790789c.jpg"
-          alt="Smart Eco Ger Background"
-          fill
-          className="object-cover"
-          priority
-        />
+        {images.map((src, index) => (
+          <div
+            key={src}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <Image
+              src={src}
+              alt={`Smart Eco Ger Background ${index + 1}`}
+              fill
+              className="object-cover"
+              priority={index === 0}
+            />
+          </div>
+        ))}
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
@@ -26,7 +53,6 @@ export default function Hero() {
           {t('title')}
         </h1>
         <p className="mb-10 max-w-2xl text-lg font-medium sm:text-xl md:text-2xl drop-shadow-md">
-           {/* You can add a subtitle translation key if needed */}
            Smart Eco Ger - Modern Nomad Lifestyle
         </p>
         
@@ -49,6 +75,22 @@ export default function Hero() {
           >
             {t('contact')}
           </Link>
+        </div>
+
+        {/* Slideshow Indicators */}
+        <div className="absolute bottom-8 flex gap-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`h-2 rounded-full transition-all ${
+                index === currentImageIndex 
+                  ? 'w-8 bg-white' 
+                  : 'w-2 bg-white/50 hover:bg-white/75'
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </div>

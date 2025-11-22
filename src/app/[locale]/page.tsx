@@ -184,7 +184,7 @@ export default function HomePage() {
                   <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full">
                     <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl border-4 border-[var(--brand-gold)]">
                       <Image
-                        src="/product/442c4846-f77e-462c-9d18-1f5e7ecc9328.jpg"
+                        src="/images/19.jpg"
                         alt="Smart Eco Ger"
                         fill
                         className="object-cover"

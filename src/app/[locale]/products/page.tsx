@@ -4,11 +4,34 @@ import {useTranslations} from 'next-intl';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import Image from 'next/image';
-// import ProductCard from '../../../components/ProductCard';
+import {useState, useEffect} from 'react';
 
 export default function ProductsPage() {
   const t = useTranslations('Products');
   const tDetails = useTranslations('SmartEcoGerDetails');
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const carouselImages = [
+    '/product/442c4846-f77e-462c-9d18-1f5e7ecc9328.jpg',
+    '/images/3.jpg',
+    '/images/5.jpg',
+    '/images/8.jpg',
+    '/images/9.jpg',
+    '/images/12.jpg',
+    '/images/13.jpg',
+    '/images/24.jpg',
+    '/images/25.jpg',
+    '/images/28.jpg',
+    '/images/30.jpg'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [carouselImages.length]);
 
   const handleDownloadBrochure = () => {
     const link = document.createElement('a');
@@ -17,6 +40,22 @@ export default function ProductsPage() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentImageIndex(index);
+  };
+
+  const goToPrevious = () => {
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === 0 ? carouselImages.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentImageIndex((prevIndex) => 
+      (prevIndex + 1) % carouselImages.length
+    );
   };
 
   return (
@@ -41,19 +80,70 @@ export default function ProductsPage() {
           {/* Featured Product: Smart Eco Ger - Detailed */}
           <div className="mb-16 md:mb-20 space-y-12 md:space-y-16">
             
-            {/* 1. Intro & Image */}
+            {/* 1. Intro & Image Carousel */}
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
-              {/* Image - Mobile: full width, Desktop: sticky */}
+              {/* Image Carousel - Mobile: full width, Desktop: sticky */}
               <div className="w-full lg:w-1/2 lg:sticky lg:top-24">
                 <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-[var(--brand-gold)]">
-                  <Image
-                    src="/product/442c4846-f77e-462c-9d18-1f5e7ecc9328.jpg"
-                    alt="Smart Eco Ger"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    priority
-                  />
+                  {/* Images */}
+                  {carouselImages.map((src, index) => (
+                    <div
+                      key={src}
+                      className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                        index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                      }`}
+                    >
+                      <Image
+                        src={src}
+                        alt={`Smart Eco Ger ${index + 1}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        priority={index === 0}
+                      />
+                    </div>
+                  ))}
+
+                  {/* Navigation Arrows */}
+                  <button
+                    onClick={goToPrevious}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all backdrop-blur-sm"
+                    aria-label="Previous image"
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button
+                    onClick={goToNext}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all backdrop-blur-sm"
+                    aria-label="Next image"
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+
+                  {/* Indicators */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    {carouselImages.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToSlide(index)}
+                        className={`h-2 rounded-full transition-all ${
+                          index === currentImageIndex 
+                            ? 'w-8 bg-white' 
+                            : 'w-2 bg-white/50 hover:bg-white/75'
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Image Counter */}
+                  <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm">
+                    {currentImageIndex + 1} / {carouselImages.length}
+                  </div>
                 </div>
               </div>
 
@@ -279,7 +369,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="relative h-64 lg:h-full min-h-[300px] lg:min-h-[400px] rounded-2xl overflow-hidden border-4 border-[var(--brand-gold)]/30 shadow-xl">
                   <Image
-                    src="/product/7f9aaaec-340f-4760-8af3-bbea308f2c0a.jpg"
+                    src="/images/15.jpg"
                     alt="Smart System"
                     fill
                     className="object-cover"
