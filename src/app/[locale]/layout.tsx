@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "УХААЛАГ ШИЙДЭЛ, ТАВ ТУХТАЙ ОРЧИН",
-  description: "Smart Solutions – Comfortable Environment!",
+  description: "Smart Solutions – LIVE COMFORTABLE!",
 };
 
 export default async function LocaleLayout({
