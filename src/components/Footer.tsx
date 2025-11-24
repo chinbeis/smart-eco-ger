@@ -21,19 +21,19 @@ export default function Footer() {
               <p className="text-sm text-gray-400 mb-2">{tFooter('followUs')}</p>
               <div className="flex gap-3">
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/profile.php?id=61578594755231&rdid=mD03Kv9WO1Itdp7y&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JzZ8sRRvp%2F#" 
                   className="w-10 h-10 rounded-xl bg-white/10 hover:bg-[var(--brand-gold)] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:rotate-6"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a 
+                {/* <a 
                   href="#" 
                   className="w-10 h-10 rounded-xl bg-white/10 hover:bg-[var(--brand-gold)] flex items-center justify-center transition-all duration-300 hover:scale-110 hover:rotate-6"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
